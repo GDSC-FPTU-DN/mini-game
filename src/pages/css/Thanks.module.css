@@ -1,0 +1,60 @@
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://picstatio.com/large/vyddrj/google-original-material-wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 50%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 40px;
+    backdrop-filter: blur(20px);
+    box-shadow: -1px -1px 0 0 #fff, 1px 1px 0 0 #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 200px;
+}
+
+.result {
+    font-size: 24px;
+    text-align: center;
+}
+
+.submit {
+    width: 100%;
+}
+
+@media screen and (max-width: 821px) {
+    .container {
+        width: 80%;
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .container {
+        height: 50%;
+    }
+}
