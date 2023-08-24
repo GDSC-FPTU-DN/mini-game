@@ -1,149 +1,149 @@
 .page {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://picstatio.com/large/vyddrj/google-original-material-wallpaper.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 0 100px;
-    box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://picstatio.com/large/vyddrj/google-original-material-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 100px;
+  box-sizing: border-box;
 }
 
 .spacer {
-    width: 40px;
+  width: 40px;
 }
 
 .submit,
 .options {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .option {
-    padding: 60px;
-    background-color: #fff;
-    border-radius: 20px;
-    font-size: 20px;
-    flex: 1;
-    text-align: center;
-    cursor: pointer;
-    transition: .3s;
-    box-sizing: border-box;
+  padding: 60px;
+  background-color: #fff;
+  border-radius: 20px;
+  font-size: 20px;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  box-sizing: border-box;
 }
 
 .option:hover {
-    transform: translate(-3px, -3px);
-    box-shadow: 3px 3px 0 0 #333;
+  transform: translate(-3px, -3px);
+  box-shadow: 3px 3px 0 0 #333;
 }
 
 .option:active {
-    transform: translate(0px, 0px);
-    box-shadow: 0 0 10px 0 #fff;
+  transform: translate(0px, 0px);
+  box-shadow: 0 0 10px 0 #fff;
 }
 
 .option:not(:last-child) {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .active.option:first-child {
-    background-color: #ea4335;
+  background-color: #ea4335;
 }
 
 .active.option:nth-child(2) {
-    background-color: #4285f4;
+  background-color: #4285f4;
 }
 
 .active.option:nth-child(3) {
-    background-color: #fbbc05;
+  background-color: #fbbc05;
 }
 
 .active.option:last-child {
-    background-color: #34a853;
+  background-color: #34a853;
 }
 
 .question {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: rgba(255, 255, 255, .6);
-    backdrop-filter: blur(10px);
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .prompt {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 821px) {
-    .page {
-        padding: 20px;
-    }
+  .page {
+    padding: 20px;
+  }
 
-    .option {
-        padding: 30px;
-    }
+  .option {
+    padding: 30px;
+  }
 }
 
 @media screen and (max-width: 577px) {
+  .submit,
+  .options {
+    flex-direction: column;
+  }
 
-    .submit,
-    .options {
-        flex-direction: column;
-    }
+  .submit > div:first-child {
+    margin-bottom: 20px;
+  }
 
-    .submit>div:first-child {
-        margin-bottom: 20px;
-    }
+  .prompt {
+    text-align: center;
+    padding-top: 20px;
+  }
 
-    .prompt {
-        text-align: center;
-        padding-top: 20px;
-    }
+  .option {
+    padding: 20px;
+    width: 100%;
+    margin-right: 0 !important;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
 
-    .option {
-        padding: 20px;
-        width: 100%;
-        margin-right: 0 !important;
-        border-radius: 10px;
-        box-sizing: border-box;
-    }
-
-    .option:not(:first-child) {
-        margin-top: 20px;
-    }
+  .option:not(:first-child) {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 376px) {
-    .question {
-        margin-bottom: 0;
-        padding: 20px;
-    }
+  .question {
+    margin-bottom: 0;
+    padding: 20px;
+  }
 
-    .prompt {
-        padding-top: 10px;
-    }
+  .prompt {
+    padding-top: 10px;
+    font-size: 18px;
+  }
 
-    .submit>div:first-child {
-        margin-bottom: 10px;
-    }
+  .submit > div:first-child {
+    margin-bottom: 10px;
+  }
 
-    .submit,
-    .options {
-        padding: 5px 10px;
-    }
+  .submit,
+  .options {
+    padding: 5px 10px;
+  }
 
-    .option:not(:first-child) {
-        margin-top: 10px;
-    }
+  .option:not(:first-child) {
+    margin-top: 10px;
+  }
 }
