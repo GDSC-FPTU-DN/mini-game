@@ -1,8 +1,8 @@
 # GDSC MiniGame
 
-### Project has already deployed 🔥
+### Project has already been deployed 🔥
 
-👉 Deployed on [Vercel App](minigame-a0i2pcf1o-ming-doan.vercel.app)
+👉 Deployed on [Vercel App](https://minigame-a0i2pcf1o-ming-doan.vercel.app/)
 
 ### How to run 🚀
 
@@ -26,7 +26,7 @@ npm start
 
 ### Update Questions ❓
 
-Go to src/models/questions.js
+Go to `src/models/questions.js`
 
 Then Add or Modify questions
 
